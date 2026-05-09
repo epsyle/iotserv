@@ -1,9 +1,8 @@
 iotserv
 =====
+OTP-приложение для управления сервером IoT-устройств.
 
-An OTP application
-
-Build
+Пример
 -----
 elyspe@elyspe:~/Документы/hw09/iotserv$ rebar3 shell
 ===> Verifying dependencies...
