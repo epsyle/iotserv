@@ -15,7 +15,8 @@ Eshell V14.2.5.13 (press Ctrl+G to abort, type help(). for help)
 {ok,[jsx,iotserv]}
 2> rr("include/iotserv.hrl").
 [device]
-3> D1 = #device{id = 1, name = <<"sensor-1">>, address = <<"A1">>, temperature = 23, metrics = [{temp, 43}]}.
+3> D1 = #device{id = 1, name = <<"sensor-1">>, address = <<"A1">>, temperature = 23, metrics =
+[{temp, 43}]}.
 #device{id = 1,name = <<"sensor-1">>,address = <<"A1">>,
         temperature = 23,
         metrics = [{temp,43}]}
@@ -23,8 +24,8 @@ Eshell V14.2.5.13 (press Ctrl+G to abort, type help(). for help)
 {ok,1}
 5> iotserv:lookup(1).
 {ok,#device{id = 1,name = <<"sensor-1">>,address = <<"A1">>,
-            temperature = 23,
-            metrics = [{temp,43}]}}
+        temperature = 23,
+        metrics = [{temp,43}]}}
 6> D2 = #device{id = 1, name = <<"sensor-1">>, address = <<"A2">>, temperature = 25, metrics = [{temp, 45}]}.
 #device{id = 1,name = <<"sensor-1">>,address = <<"A2">>,
         temperature = 25,
