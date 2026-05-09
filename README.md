@@ -4,6 +4,7 @@ OTP-приложение для управления сервером IoT-уст
 
 Пример
 -----
+```erl
 elyspe@elyspe:~/Документы/hw09/iotserv$ rebar3 shell
 ===> Verifying dependencies...
 ===> Analyzing applications...
