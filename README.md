@@ -57,6 +57,5 @@ true
                {child_type,worker}]
 
 13> whereis(iotserv).
-
 <0.229.0>
 
