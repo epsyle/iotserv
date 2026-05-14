@@ -1,0 +1,13 @@
+{application, iotserv, [
+    {description, "IoT device server"},
+    {vsn, "1.0.0"},
+    {registered, [iotserv]},
+    {modules, [
+        iotserv_app,
+        iotserv_sup,
+        iotserv,
+        iotserv_db
+    ]},
+    {applications, [kernel, stdlib, jsx]},
+    {mod, {iotserv_app, []}}
+]}.
